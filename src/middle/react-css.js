@@ -6,20 +6,20 @@ import registerServiceWorker from '../registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
-class ExportBar extends React.Component {  
+class ExportBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       backgroundColor: 'blue',
     };
   }
-  
+
   handleClick = (e) => {
     this.setState({
       backgroundColor: 'yellow'
     });
   }
-  
+
   render() {
     const styles = {
       containerStyle: {
